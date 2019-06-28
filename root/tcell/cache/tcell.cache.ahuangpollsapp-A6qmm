@@ -1,0 +1,482 @@
+{
+  "last_id": 1,
+  "appsensor": {
+    "configId": 1,
+    "data": {
+      "options": {
+        "payloads": {
+          "log_blacklist": {
+            "client_secret": [
+              "*"
+            ],
+            "csrftoken": [
+              "*"
+            ],
+            "j_password": [
+              "*"
+            ],
+            "j_sessionid": [
+              "*"
+            ],
+            "jsessionid": [
+              "*"
+            ],
+            "passwd": [
+              "*"
+            ],
+            "password": [
+              "*"
+            ],
+            "pf.pass": [
+              "*"
+            ],
+            "pwd": [
+              "*"
+            ],
+            "refresh_token": [
+              "*"
+            ],
+            "session": [
+              "*"
+            ],
+            "sessionid": [
+              "*"
+            ],
+            "token": [
+              "*"
+            ],
+            "user.password": [
+              "*"
+            ]
+          },
+          "log_payloads": false,
+          "send_blacklist": {
+            "client_secret": [
+              "*"
+            ],
+            "csrftoken": [
+              "*"
+            ],
+            "j_password": [
+              "*"
+            ],
+            "j_sessionid": [
+              "*"
+            ],
+            "jsessionid": [
+              "*"
+            ],
+            "passwd": [
+              "*"
+            ],
+            "password": [
+              "*"
+            ],
+            "pf.pass": [
+              "*"
+            ],
+            "pwd": [
+              "*"
+            ],
+            "refresh_token": [
+              "*"
+            ],
+            "session": [
+              "*"
+            ],
+            "sessionid": [
+              "*"
+            ],
+            "token": [
+              "*"
+            ],
+            "user.password": [
+              "*"
+            ]
+          },
+          "send_payloads": true
+        },
+        "uri_options": {
+          "collect_full_uri": false
+        }
+      },
+      "sensors": {
+        "cmdi": {
+          "dynamic_patterns": [
+            "tc-cmdi-1",
+            "tc-cmdi-2"
+          ]
+        },
+        "errors": {
+          "csrf_exception_enabled": true,
+          "sql_exception_enabled": true
+        },
+        "fpt": {
+          "dynamic_patterns": [
+            "tc-fpt-1",
+            "tc-fpt-2",
+            "tc-fpt-3",
+            "tc-fpt-4"
+          ]
+        },
+        "ignore_rules": [
+          {
+            "destinations": {
+              "paths": [],
+              "routes": []
+            },
+            "ips": [],
+            "locations": {
+              "body": [],
+              "cookie": [],
+              "header": [
+                "accept"
+              ],
+              "query": []
+            },
+            "sensors": {
+              "sqli": [
+                "li",
+                "tc-sqli-li"
+              ]
+            }
+          }
+        ],
+        "nullbyte": {
+          "dynamic_patterns": [
+            "tc-nullbyte-1"
+          ]
+        },
+        "req_size": {
+          "limit": 7168
+        },
+        "resp_codes": {
+          "series_400_enabled": true,
+          "series_500_enabled": true
+        },
+        "resp_size": {
+          "limit": 20480
+        },
+        "retr": {
+          "dynamic_patterns": [
+            "tc-retr-1"
+          ]
+        },
+        "sqli": {
+          "dynamic_patterns": [
+            "tc-sqli-4",
+            "tc-sqli-2",
+            "tc-sqli-7",
+            "tc-sqli-3",
+            "tc-sqli-li",
+            "tc-sqli-1"
+          ]
+        },
+        "ua": {
+          "empty_enabled": true
+        },
+        "xss": {
+          "dynamic_patterns": [
+            "tc-xss-2",
+            "tc-xss-8",
+            "tc-xss-6",
+            "tc-xss-7",
+            "tc-xss-li",
+            "tc-xss-4",
+            "tc-xss-1",
+            "tc-xss-5"
+          ]
+        },
+        "xxe": {
+          "dynamic_patterns": [
+            "tc-xxe-1"
+          ]
+        }
+      }
+    },
+    "policy_id": "53f42da0-9839-11e9-8080-808080808080",
+    "version": 3
+  },
+  "csp-headers": {
+    "app_id": "ahuangpollsapp-A6qmm",
+    "configId": 1,
+    "data": {
+      "options": {
+        "js_agent_api_key": "AQQBBAGdbKQiAEZNYqsKD6wSTOswDt3KIic2SgKe1ABEF2j9i_m9_CX29MsFmBFSDqt_Ybc"
+      }
+    },
+    "headers": [
+      {
+        "name": "Content-Security-Policy-Report-Only",
+        "report-uri": "https://us.input.tcell.insight.rapid7.com/csp/aa047a128da595d3e37b8a5fa516671df4d55cb0e4ec2e39c20bb7051c753a24",
+        "report_uri": "https://us.input.tcell.insight.rapid7.com/csp/aa047a128da595d3e37b8a5fa516671df4d55cb0e4ec2e39c20bb7051c753a24",
+        "value": "media-src 'none'; img-src 'none'; object-src 'none'; worker-src 'none'; script-src 'none'; manifest-src 'none'; style-src 'none'; font-src 'none'; child-src https://us.input.tcell.insight.rapid7.com/; frame-src https://us.input.tcell.insight.rapid7.com/; connect-src https://us.agent.tcell.insight.rapid7.com https://us.input.tcell.insight.rapid7.com/"
+      }
+    ],
+    "paths_config": [],
+    "policy_id": "53f56620-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "clickjacking": {
+    "configId": 1,
+    "headers": [],
+    "policy_id": "53f7b010-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "secure-headers": {
+    "configId": 1,
+    "headers": [],
+    "policy_id": "53f39160-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "patches": {
+    "configId": 1,
+    "data": {
+      "block_rules": [],
+      "blocked_ips": [],
+      "payloads": {
+        "send_blacklist": [
+          "j_password",
+          "jsessionid",
+          "client_secret",
+          "pf.pass",
+          "user.password",
+          "csrftoken",
+          "session",
+          "token",
+          "passwd",
+          "password",
+          "sessionid",
+          "j_sessionid",
+          "refresh_token",
+          "pwd"
+        ],
+        "send_payloads": true
+      },
+      "rules": []
+    },
+    "policy_id": "patches-v1-1",
+    "version": 1
+  },
+  "regex": {
+    "configId": 0,
+    "data": {
+      "patterns": [
+        {
+          "id": "tc-fpt-3",
+          "pattern": "(?:etc/\\W*passwd)|(?:etc/\\W*shadow)",
+          "sensor": "fpt",
+          "title": "Attempt for /etc/passwd, shadow"
+        },
+        {
+          "id": "tc-xss-5",
+          "pattern": "(?:[\".]script\\s*\\()|(?:\\$\\$?\\s*\\(\\s*[\\w\"])|(?:/[\\w\\s]+/\\.)|(?:=\\s*/\\w+/\\s*\\.)|(?:(?:this|window|top|parent|frames|self|content)\\[\\s*[(,\"]*\\s*[\\w\\$])|(?:,\\s*new\\s+\\w+\\s*[,;)])",
+          "sensor": "xss",
+          "title": "Basic Obfuscation"
+        },
+        {
+          "id": "tc-retr-1",
+          "pattern": "(\\n|\\r)",
+          "sensor": "retr",
+          "title": "Any Line-Break Character"
+        },
+        {
+          "id": "tc-xss-2",
+          "pattern": "(?:(alert|on\\w+\\s*=|function\\s+\\w+)\\s*\\(\\s*(['+\\d\\w](,?\\s*['+\\d\\w]*)*)*\\s*\\))",
+          "sensor": "xss",
+          "title": "Alert or Event XSS"
+        },
+        {
+          "id": "tc-xss-4",
+          "pattern": "(?:\"+.*[<=]\\s*\"[^\"]+\")|(?:\"\\s*\\w+\\s*=)|(?:>\\w=/)|(?:#.+\\)[\"\\s]*>)|(?:\"\\s*(?:src|style|on\\w+)\\s*=\\s*\")|(?:[^\"]?\"[,;\\s]+\\w*[\\[\\(])(?:^>[\\w\\s]*</?\\w{2,}>)",
+          "sensor": "xss",
+          "title": "Attribute Breaks"
+        },
+        {
+          "id": "tc-xss-8",
+          "pattern": "\\b(src|href|lowsrc|url|content)\\b\\W*?\\bjavascript:",
+          "sensor": "xss",
+          "title": "JavaScript URL"
+        },
+        {
+          "id": "tc-nullbyte-1",
+          "pattern": "\\x00|%00",
+          "sensor": "nullbyte",
+          "title": "Any Null Byte"
+        },
+        {
+          "id": "tc-xss-6",
+          "pattern": "(?:=\\s*\\w+\\s*\\+\\s*\")|(?:\\+=\\s*\\(\\s\")|(?:!+\\s*[\\d.,]+\\w?\\d*\\s*\\?)|(?:=\\s*\\[\\s*\\])|(?:\"\\s*\\+\\s*\")|(?:[^\\s]\\[\\s*\\d+\\s*\\]\\s*[;+])|(?:\"\\s*[&|]+\\s*\")|(?:/\\s*\\?\\s*\")|(?:/\\s*\\)\\s*\\[)|(?:\\d\\?.+:\\d)|(?:\\]\\s*\\[\\W*\\w)",
+          "sensor": "xss",
+          "title": "Common Concatenation"
+        },
+        {
+          "id": "tc-sqli-1",
+          "pattern": "(?:(?:\\d[\"'`´’‘]\\s+[\"'`´’‘]\\s+\\d)|(?:^admin\\s*?[\"'`´’‘]|(/\\*)+[\"'`´’‘]+\\s?(?:--|#|/\\*|\\{)?)|(?:[\"'`´’‘]\\s*?\\b(x?or|div|like|between|and)\\b\\s*?[+<>=(),-]\\s*?[\\d\"'`´’‘])|(?:[\"'`´’‘]\\s*?[^\\w\\s]?=\\s*?[\"'`´’‘])|(?:[\"'`´’‘]\\W*?[+=]+\\W*?[\"'`´’‘])|(?:[\"'`´’‘]\\s*?[!=|][\\d\\s!=+-]+.*?[\"'`´’‘(].*?$)|(?:[\"'`´’‘]\\s*?[!=|][\\d\\s!=]+.*?\\d+$)|(?:[\"'`´’‘]\\s*?like\\W+[\\w\"'`´’‘(])|(?:\\sis\\s*?0\\W)|(?:where\\s[\\s\\w\\.,-]+\\s=)|(?:[\"'`´’‘][<>~]+[\"'`´’‘]))",
+          "sensor": "sqli",
+          "title": "Common Encoding Obfuscations"
+        },
+        {
+          "id": "tc-sqli-3",
+          "pattern": "([';]--|--[\\s\\r\\n\\v\\f]|(?:'[\\s\\r\\n\\v\\f]*--[^-]*?-)|#[\\s\\r\\n\\v\\f]*$|;?\\\\x00)",
+          "sensor": "sqli",
+          "title": "SQL Comment Sequence"
+        },
+        {
+          "id": "tc-cmdi-3",
+          "pattern": "<\\?xml.*<!ENTITY",
+          "sensor": "cmdi",
+          "title": "XML Injection Attempts"
+        },
+        {
+          "id": "tc-xss-7",
+          "pattern": "<iframe.*",
+          "sensor": "xss",
+          "title": "IFrame Tag Injection"
+        },
+        {
+          "id": "tc-fpt-4",
+          "pattern": ".svn/(./)*entries",
+          "sensor": "fpt",
+          "title": "Spider svn entries disclosure"
+        },
+        {
+          "id": "tc-sqli-4",
+          "pattern": "(?:(?:@.+=\\s*?\\(\\s*?select)|(?:\\d+\\s*?(x?or|div|like|between|and)\\s*?\\d+\\s*?[\\-+])|(?:/\\w+;?\\s+(?:having|and|x?or|div|like|between|and|select)\\W)|(?:\\d\\s+group\\s+by.+\\()|(?:(?:;|#|--)\\s*?(?:drop|alter))|(?:(?:;|#|--)\\s*?(?:update|insert)\\s*?\\w{2,})|(?:[^\\w]SET\\s*?@\\w+)|(?:(?:n?and|x?x?or|div|like|between|and|not |\\|\\||\\&\\&)[\\s(]+\\w+[\\s)]*?[!=+]+[\\s\\d]*?[\"'`´’‘=()]))",
+          "sensor": "sqli",
+          "title": "Extraction Attempts"
+        },
+        {
+          "id": "tc-xss-1",
+          "pattern": "(?:<(script|iframe|embed|frame|frameset|object|img|applet|body|html|style|layer|link|ilayer|meta|bgsound))",
+          "sensor": "xss",
+          "title": "Basic Injection"
+        },
+        {
+          "id": "tc-cmdi-2",
+          "pattern": "(?:\\b(?:(?:n(?:et(?:\\b\\W+?\\blocalgroup|\\.exe)|(?:map|c)\\.exe)|t(?:racer(?:oute|t)|elnet\\.exe|clsh8?|ftp)|(?:w(?:guest|sh)|rcmd|ftp)\\.exe|echo\\b\\W*?\\by+)\\b|c(?:md(?:(?:\\.exe|32)\\b|\\b\\W*?/c)|d(?:\\b\\W*?[\\\\/]|\\W*?\\.\\.)|hmod.{0,40}?\\+.{0,3}x))|[;\\|`]\\W*?\\b(?:(?:c(?:h(?:grp|mod|own|sh)|md|pp)|p(?:asswd|ython|erl|ing|s)|ruby|node|n(?:asm|map|c)|f(?:inger|tp)|(?:kil|mai)l|(?:xte)?rm|ls(?:of)?|telnet|uname|echo|id)\\b|g(?:\\+\\+|cc\\b)))",
+          "sensor": "cmdi",
+          "title": "Common Command Attempts"
+        },
+        {
+          "id": "tc-sqli-7",
+          "pattern": "(?:[\\s()]case\\s*\\()|(?:\\)\\s*like\\s*\\()|(?:having\\s*[^\\s]+\\s*[^\\w\\s])|(?:if\\s?\\([\\d\\w]\\s*[=<>~])",
+          "sensor": "sqli",
+          "title": "Conditional Attempts"
+        },
+        {
+          "id": "tc-fpt-1",
+          "pattern": "(?:(?:/|\\\\)?\\.+(/|\\\\)(?:\\.*))|(?:\\w+\\.exe\\??\\s)|(?:;\\s*\\w+\\s*/[\\w*-]+/)|(?:\\d\\.\\dx\\|)|(?:%(?:c0\\.|af\\.|5c\\.))|(?:/(?:%2e){2})",
+          "sensor": "fpt",
+          "title": "General Traversal"
+        },
+        {
+          "id": "tc-fpt-2",
+          "pattern": "(?:%c0%ae/)|(?:(?:/|\\\\)(conf|usr|etc|proc|opt|s?bin|local|dev|tmp|kern|[br]oot|sys|system|windows|winnt|program|%[a-z_-]{3,}%)(?:/|\\\\))|(?:(?:/|\\\\)inetpub|localstart\\.asp|boot\\.ini)",
+          "sensor": "fpt",
+          "title": "Common System Probing"
+        },
+        {
+          "id": "tc-cmdi-1",
+          "pattern": "(?:[;\\|`]\\W*?\\bcc|[&\\|;]\\W*\\b\\b(wget|curl))\\b|/cc(?:['\"\\|;`\\-\\s]|$)",
+          "sensor": "cmdi",
+          "title": "Common Remote Attempts"
+        },
+        {
+          "id": "tc-sqli-2",
+          "pattern": "\\b(?:having)\\b\\s+(\\d{1,10}|'[^=]{1,10}')\\s*?[=<>]|(?:\\b(?:execute|sleep)(\\s{1,5}[\\w\\.$]{1,5}\\s{0,3})?\\()|\\bhaving\\b ?(?:\\d{1,10}|['\"][^=]{1,10}['\"]) ?[=<>]+|(?:\\bcreate\\s+?table.{0,20}?\\()|(?:\\blike\\W*?char\\W*?\\()|(?:(?:(select(.*?)case|from(.*?)limit|order\\sby)))|exists\\s(\\sselect|select\\Sif(null)?\\s\\(|select\\Stop|select\\Sconcat|system\\s\\(|\\b(?:having)\\b\\s+(\\d{1,10})|'[^=]{1,10}')",
+          "sensor": "sqli",
+          "title": "Common Probes/Executions"
+        }
+      ],
+      "version": 1561570760081
+    },
+    "policy_id": "53f7b010-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "http-redirect": {
+    "configId": 1,
+    "data": {
+      "block": false,
+      "enabled": true,
+      "whitelist": []
+    },
+    "policy_id": "53f47bc0-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "cmdi": {
+    "configId": 1,
+    "data": {
+      "collect_full_commandline": false,
+      "command_rules": [
+        {
+          "action": "report",
+          "rule_id": "TJM4ODvkB2jSR47qltL+0Nyy/PGlF6Qa/cin65qtIlc="
+        }
+      ],
+      "compound_statement_rules": [
+        {
+          "action": "report",
+          "rule_id": "Y+IHN7BJDctqOIIZOb71NR8PkUxru01LDkqU1lZwogY="
+        }
+      ]
+    },
+    "policy_id": "53f454b0-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "jsagentinjection": {
+    "api_key": "AQQBBAGdbKQiAEZNYqsKD6wSTOswDt3KIic2SgKe1ABEF2j9i_m9_CX29MsFmBFSDqt_Ybc",
+    "configId": 1,
+    "enabled": true,
+    "excludes": [],
+    "policy_id": "jsagentinjection-v1-1",
+    "state": "Enabled",
+    "version": 1
+  },
+  "login": {
+    "configId": 1,
+    "data": {
+      "options": {
+        "login_failed_enabled": true,
+        "login_success_enabled": true,
+        "session_hijacking_enabled": true
+      }
+    },
+    "policy_id": "53f4a2d0-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "localfileinclusion": {
+    "configId": 1,
+    "enabled": false,
+    "policy_id": "53f47bc0-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "systemenablements": {
+    "configId": 1,
+    "data": {
+      "send_agent_logs": false,
+      "send_lfi_path_discovery": true,
+      "send_routes": true
+    },
+    "policy_id": "53f42da0-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "dlp": {
+    "configId": 1,
+    "data": {
+      "data_discovery": {
+        "database_enabled": false
+      },
+      "db_protections": [],
+      "request_protections": []
+    },
+    "policy_id": "53f51800-9839-11e9-8080-808080808080",
+    "version": 1
+  },
+  "canaries": {
+    "configId": 1,
+    "policy_id": "53f2ce10-9839-11e9-8080-808080808080",
+    "tokens": [],
+    "version": 1
+  }
+}
