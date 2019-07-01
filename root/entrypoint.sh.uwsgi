@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -d "/tcell-agent" ]; then
+    pip install -qe /tcell-agent \
+        || echo "WARNING: Agent source directory exists but is empty not found — is pythonagent-tcell checked out?"
+fi
+
+# tcell_agent test || { echo 'There was an error running diagnostics.' ; exit 1; }
+tcell_agent run uwsgi ${UWSGI_EXTRA_ARGS:-} --socket 0.0.0.0:80 --protocol=http --master --processes=1 --threads=5 --enable-threads -w django_test.wsgi

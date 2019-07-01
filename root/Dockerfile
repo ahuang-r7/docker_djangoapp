@@ -6,15 +6,16 @@ RUN mkdir /app
 WORKDIR /app
 
 ARG PROJECT=root
-ARG PROJECT_DIR=~/Users/ahuang/Documents/root
+ARG PROJECT_DIR=~/Users/ahuang/Desktop/docker_djangoapp/root
 
 ADD requirements.txt /app
-RUN pip install -r requirements.txt
+RUN pip install -q -r requirements.txt uwsgi
+RUN pip install tcell_agent
 
 ADD . /app
 
 EXPOSE 8000
 STOPSIGNAL SIGINT
-ENTRYPOINT ["python3.6", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
+
+CMD ./entrypoint.sh.uwsgi
 

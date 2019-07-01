@@ -13,8 +13,8 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
-os.environ['TCELL_AGENT_CONFIG'] = '/Users/ahuang/Documents/root/tcell/tcell_agent.config'
-os.environ['TCELL_AGENT_HOME'] = '/Users/ahuang/Documents/root/tcell'
+os.environ['TCELL_AGENT_CONFIG'] = '/Users/ahuang/Desktop/docker_djangoapp/root/tcell/tcell_agent.config'
+os.environ['TCELL_AGENT_HOME'] = '/Users/ahuang/Desktop/docker_djangoapp/root/tcell'
 
 import tcell_agent
 
